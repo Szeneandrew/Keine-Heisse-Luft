@@ -1,0 +1,295 @@
+*{
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(167, 209, 237);
+    color: rgb(34, 2, 78);
+}
+
+.seitentitel {
+    text-align: center;
+}
+
+#logo {
+  border-radius: 50%;
+}
+
+#Webseitentitel {
+  margin-top: 70px;
+  color: rgb(34, 2, 78);
+  font-size: 60px;
+}
+
+.begrüssung {
+  padding-top: 0;
+}
+
+#Lead {
+  font-size: 20px;
+}
+
+/* Nav-Bar */
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 12px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(141, 200, 239);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: white;
+  }
+
+  .active {
+    color:white;
+    background-color: rgb(105, 64, 240);
+  }
+  
+  li a:hover {
+    background-color: rgb(105, 64, 240);
+  }
+
+#nachoben {
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+#nachoben:hover {
+  background-color: rgb(105, 64, 240);
+}
+
+.nachoben {
+  text-align: center;
+}
+
+/* Home */
+
+#liste-ballon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 250px));
+  place-self: center;
+  justify-content: center;
+}
+
+.ballon {
+  height: 350px;
+  overflow-y: auto;
+  border: solid white;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 12px;
+  place-self: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+img.ballon-image {
+  float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20%;
+    vertical-align: top;
+    place-self: center;
+}
+
+.ballontitel {
+  font-size: 20px;
+}
+
+#ballone {
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#ballone:hover{
+  background-color: rgb(105, 64, 240);
+}
+
+.mieteButton {
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 15px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.mieteButton:hover {
+  background-color: rgb(105, 64, 240)
+}
+
+/* Profil */
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.item {
+  width: 33.3%;
+}
+
+@media only screen and (max-width: 800px) {
+  [class*="item"] {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  [class*="item"] {
+    width: 100%;
+  }
+}
+
+  .ballonbild {
+    border-radius: 50%;
+    object-fit: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .profilbild {
+    border-radius: 50%;
+  }
+
+  #editkonto {
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  }
+
+  #editkonto:hover {
+    background-color: rgb(105, 64, 240)
+  }
+
+  h2.mietballon {
+    text-align: center;
+  }
+
+
+  /* Edit Konto*/
+
+  #edituser{
+    background-color: white;
+    color: rgb(141, 200, 239);
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    }
+
+  #edituser:hover {
+    background-color: rgb(105, 64, 240)
+  }
+
+  #editballon{
+    background-color: white;
+    color: rgb(141, 200, 239);
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    }
+
+  #editballon:hover {
+    background-color: rgb(105, 64, 240)
+  }
+  
+  #ballonErstellen{
+    background-color: white;
+    color: rgb(141, 200, 239);
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    }
+
+  #ballonErstellen:hover {
+    background-color: rgb(105, 64, 240)
+  }
+
+  /* Formulare */
+
+input {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/* Login */
+
+#loginbutton{
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#loginbutton:hover {
+  background-color: rgb(105, 64, 240)
+}
+
+/* Registrieren */
+
+#registrierenbutton{
+  background-color: white;
+  color: rgb(141, 200, 239);
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+#registrierenbutton:hover {
+  background-color: rgb(105, 64, 240)
+}

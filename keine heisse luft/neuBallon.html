@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballon hinzufügen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+ <!--nav-bar-->
+
+ <ul class="navigation">
+    
+    <li><a href="index.html">Home</a></li>
+      
+    <li><a class="active" href="konto.html">Profil</a></li>
+
+    <li style="float:right"><a id="logoutbutton" onclick="logout()"> Logout </a></li>
+
+    <li style="float:right"><a href="login.html" href="#login">Login</a></li>
+
+    <li style="float:right"><a href="registrieren.html" href="#registrieren">Registrieren</a></li>
+
+    <script src="js/logout.js"></script>
+
+</ul>
+
+</head>
+
+<body>
+
+<script src="js/auth.js"></script>
+
+    <header class="flex">
+
+        <div class="container-header">
+
+            <h2 class="seitentitel">Mein Ballon </h2>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+    </header>
+
+    <p id="infoText"> </p>
+
+
+    <div id="meinBallon" class="form">
+
+        <label for="titel">Ballonart</label> <br>
+        <input id="titel" type="text" value=""> <br>
+
+        <label for="price">Preis pro Tag</label> <br>
+        <input id="price" type="text" value=""> <br>
+
+        <label for="adresse">Standort</label> <br>
+        <input id="adresse" type="text" value=""> <br> <br>
+        <br> <br>
+
+        <label for="beschreibung" class="beschreibung">genauere Infos</label> <br>
+        <textarea id="beschreibung" name="beschreibung"> </textarea> <br> <br>
+
+        <button class="hidden" id="editkonto" onclick="neuerBallon()">Veröffentlichen</button>
+
+        <p>Sie können später unter "Profil editieren" eine Bild-URL für Ihren Ballon angeben.</p>
+
+        </div>
+
+
+
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/neuerBallon.js"></script>
+    <script src="js/logout.js"></script>
+
+</body>
+
+</html>

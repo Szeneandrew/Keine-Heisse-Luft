@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1 class="seitentitel">Registrieren</h1>
+   
+<div class="form">
+
+    <label for=""> Benutzername</label> <br>
+    <input type="text" id="benutzername"> <br>
+
+    <label for=""> Vorname</label> <br>
+    <input type="text" id="firstname"> <br>
+
+    <label for=""> Name</label> <br>
+    <input type="text" id="lastname"> <br>
+
+    <label for=""> E-Mail Adresse</label> <br>
+    <input type="email" id="email"> <br>
+
+    <label for=""> Passwort</label> <br>
+    <input type="password" id="password"> <br> <br>
+
+    <p>Sie können später unter "Profil editieren" eine Bild-URL für Ihr Profilbild angeben.</p>
+
+    <button id="registrierenbutton" onclick="registrieren()"> Registrieren </button>
+
+</div>
+
+    
+
+    <p id="nachricht"> </p>
+
+    <script src="js/registrieren.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil bearbeiten</title>
+
+
+<!--nav-bar-->
+
+<ul class="navigation">
+    
+    <li><a href="index.html">Home</a></li>
+      
+    <li><a class="active" href="konto.html">Profil</a></li>
+
+    <li style="float:right"><a id="logoutbutton" onclick="logout()"> Logout </a></li>
+
+    <li style="float:right"><a href="login.html" href="#login">Login</a></li>
+
+    <li style="float:right"><a href="registrieren.html" href="#registrieren">Registrieren</a></li>
+
+    <script src="js/logout.js"></script>
+
+</ul>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script src="js/editBallon.js"></script>
+<script src="js/editUser.js"></script>
+<script src="js/auth.js"></script>
+
+    <h1 class="seitentitel"> Profil bearbeiten </h1>
+
+ <div class="container">
+    <div class="item">
+
+    <h2> Das bin ich </h2><br>
+
+    <form>
+
+        <label for="profilbild">Profilbild-URL</label><br>
+        <input type="text" id="profilbild" name="profilbild"><br><br>
+
+        <label for="username">Benutzername</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="firstname">Vorname</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+
+        <label for="lastname">Name</label><br>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Passwort</label><br>
+        <input type="text" id="password" name="password"><br><br>
+
+        <button id="edituser" onclick="editUser()"> Update Profile </button>
+
+    <form>
+
+    <p id="nachrichtProfil"></p>
+
+    </div>
+    <div id="bearbeiteBallon" class="item">
+
+    <h2 id="deinBallon"> Das ist mein Ballon </h2> <br>
+
+
+     <form>
+
+        <label for="bild">Bild-URL</label><br>
+        <input type="text" id="bild" name="bild"><br><br>
+
+        <label for="ballonart">Ballonart</label><br>
+        <input type="text" id="titel" name="ballonart"><br><br>
+
+        <label for="preis">Preis pro Tag</label><br>
+        <input type="text" id="price" name="preis"><br><br>
+
+        <label for="standort">Adresse</label><br>
+        <input type="text" id="adresse" name="standort"><br><br>
+
+        <label for="infos">Beschreibung</label><br>
+        <input type="text" id="beschreibung" name="infos"><br><br>
+
+        <button id="editballon" onclick="editBallon()"> Änderungen speichern </button>
+
+      </form>
+
+      <p id="nachrichtBallon"></p>
+
+    </div>
+</div>
+
+</body>
+
+</html>

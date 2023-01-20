@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+
+   <!--nav-bar-->
+
+<ul class="navigation">
+    
+    <li><a href="index.html">Home</a></li>
+      
+    <li><a class="active" href="konto.html">Profil</a></li>
+
+    <li style="float:right"><a id="logoutbutton" onclick="logout()"> Logout </a></li>
+
+    <li style="float:right"><a href="login.html" href="#login">Login</a></li>
+
+    <li style="float:right"><a href="registrieren.html" href="#registrieren">Registrieren</a></li>
+
+    <script src="js/logout.js"></script>
+
+</ul>
+</head>
+
+<body>
+
+<script src="js/auth.js"></script>
+<script src="js/holeUser.js"></script>
+
+    <h1 class="seitentitel"> Profil
+
+    <a>
+        <button onclick="window.location.href='editkonto.html';" id="editkonto"> bearbeiten </button>
+    </a>
+</h1>
+
+<div class="container">
+    <div class="item">
+
+    <h2 id="username"> Das bin ich </h2>
+
+    <img id="profilbild" class="profilbild" src="images/Profil_Icon.jpg" width="190" height="190" alt="profilbild" />
+
+    <p id="firstname">Vorname</p>
+
+    <p id="lastname">Name</p>
+
+    <p id="email">Email</p>
+
+</div>
+<div class="item">
+
+    <h2 id="deinBallon"> Das ist mein Ballon </h2>
+
+    <img id="ballonbild" class="ballonbild" src="images/Ballon_Icon.jpg" width="190" height="190" alt="ballonbild" />
+
+    <p id="ballonart">Ballonart</p>
+
+    <p id="preis">Preis pro Tag</p>
+
+    <p id="standort">Standort</p>
+
+    <p id="beschreibung">genauere Infos</p>
+
+
+    <a>
+        <button onclick="window.location.href='neuBallon.html';" id="ballonErstellen"> Ballon hinzufügen </button>
+    </a>
+
+</div>
+
+<br><br><br><br>
+
+<div class="item">
+<h2 id="deinBallon" class="mietBallon"> Gemietet </h2>
+
+
+<div class="balloncontainer">
+    <p id="nachrichtStornieren"></p>
+<div id="liste-ballon"> </div>
+</div>
+
+<br><br><br><br>
+
+</div>
+</div>
+
+    
+
+</body>
+
+</html>
